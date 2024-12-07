@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digrester Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Digrester Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#records">Records</a></li>
+                <li><a href="#contact">Add Entry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Digrester Management System</h2>
+        <p>This system allows you to track and manage digrester records easily and efficiently.</p>
+    </section>
+
+    <section id="records">
+        <h2>Digrester Records</h2>
+        <table id="recordTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Records will be dynamically added here -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Add a New Digrester Record</h2>
+        <form id="recordForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea><br><br>
+            <button type="button" onclick="addRecord()">Add Record</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Digrester Management. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
