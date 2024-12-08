@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121b22;
+    color: #e9edef;
+}
+
+.whatsapp-container {
+    max-width: 480px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.status-bar {
+    background-color: #1f2c34;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.app-bar {
+    background-color: #1f2c34;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-bar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.app-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.chat-list {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.archived-chats, .chat-item {
+    padding: 15px;
+    border-bottom: 1px solid #2a3942;
+    display: flex;
+    align-items: center;
+}
+
+.archived-chats i {
+    margin-right: 15px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.chat-details {
+    flex-grow: 1;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.chat-time, .last-message {
+    color: #8696a0;
+    font-size: 14px;
+}
+
+.bottom-nav {
+    background-color: #1f2c34;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+/* Add these styles to your existing CSS file */
+
+.unread-badge {
+    background-color: #00a884;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.message-form {
+    display: flex;
+    padding: 10px;
+    background-color: #1f2c34;
+}
+
+.message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2a3942;
+    color: #e9edef;
+}
+
+.send-button {
+    background: none;
+    border: none;
+    color: #00a884;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.send-button i {
+    width: 24px;
+    height: 24px;
+}
+
+.update-badge {
+    background-color: #00a884;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+i {
+    color: #8696a0;
+}
