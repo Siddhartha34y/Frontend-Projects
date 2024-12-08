@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Management Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Sign In Form -->
+            <div class="form" id="signInForm">
+                <h2>Sign In</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="login-username">Username:</label>
+                        <input type="text" id="login-username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                    <p class="message">Don't have an account? <a href="#" id="switchToSignUp">Sign Up</a></p>
+                    <p id="loginError" class="error-message"></p>
+                </form>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="form" id="signUpForm" style="display:none;">
+                <h2>Sign Up</h2>
+                <form id="registerForm">
+                    <div class="input-group">
+                        <label for="reg-username">Username:</label>
+                        <input type="text" id="reg-username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="reg-password">Password:</label>
+                        <input type="password" id="reg-password" required>
+                    </div>
+                    <button type="submit">Register</button>
+                    <p class="message">Already have an account? <a href="#" id="switchToSignIn">Sign In</a></p>
+                    <p id="registerError" class="error-message"></p>
+                </form>
+            </div>
+
+            <!-- Password Setup Form (Visible on First Login) -->
+            <div class="form" id="passwordSetupForm" style="display:none;">
+                <h2>Set Your Password</h2>
+                <form id="passwordSetup">
+                    <div class="input-group">
+                        <label for="new-password">New Password:</label>
+                        <input type="password" id="new-password" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" required>
+                    </div>
+                    <button type="submit">Set Password</button>
+                    <p id="passwordSetupError" class="error-message"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
